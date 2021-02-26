@@ -28,9 +28,7 @@ public class EmplMain {
                 new Employee(7,"Beki","zola",24,25000),
                 new Employee(8,"Yirge","Moha",22,35000));
         employeeList.forEach(x->System.out.println(x));
-        //Given a list of employees, you need to filter all the employee whose age is greater than 20 and
-        //print the employee names
-        //filter slar <25000
+
       List<String> listfilEmp=employeeList.stream()
                     .filter(e->e.getAge()>35)
                     .map(Employee::getFirstName)
